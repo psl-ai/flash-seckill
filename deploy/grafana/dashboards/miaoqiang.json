@@ -1,0 +1,9 @@
+{
+  "title": "秒抢运营概览",
+  "schemaVersion": 39,
+  "panels": [
+    {"type":"timeseries","title":"HTTP 请求量","targets":[{"expr":"sum(rate(http_requests_total[1m]))"}]},
+    {"type":"timeseries","title":"报名成功/失败","targets":[{"expr":"sum(rate(registration_success_total[1m]))"},{"expr":"sum(rate(registration_failure_total[1m]))"}]},
+    {"type":"timeseries","title":"库存扣减与拦截","targets":[{"expr":"sum(rate(inventory_deduct_total[1m]))"},{"expr":"sum(rate(inventory_oversell_blocked_total[1m]))"}]}
+  ]
+}

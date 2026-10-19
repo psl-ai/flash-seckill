@@ -1,0 +1,6 @@
+[tool.ruff]
+line-length = 160
+ignore = ["E701", "E702", "E401", "F401"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
